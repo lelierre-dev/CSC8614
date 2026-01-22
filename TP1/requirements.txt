@@ -1,0 +1,7 @@
+plotly
+scikit-learn
+torch==2.4.1
+transformers==4.42.4
+tokenizers==0.19.1
+safetensors==0.7.0
+numpy<2
