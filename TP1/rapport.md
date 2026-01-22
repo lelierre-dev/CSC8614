@@ -5,7 +5,7 @@
 ### Exercice 2 : Découverte du tokenizer GPT-2
 
 
-![alt text](img/image.png)
+![alt text](img/image0.png)
 
 ```
 ['Art', 'ificial', 'Ġintelligence', 'Ġis', 'Ġmet', 'amorph', 'osing', 'Ġthe', 'Ġworld', '!']
@@ -71,13 +71,13 @@ Interprétation:
 768 = dimension de chaque embedding positionnel, égale à n_embd (dimension du modèle).
 n_positions correspond donc à la longueur maximale de contexte (nombre de tokens) que GPT‑2 peut traiter en entrée pour un modèle causal. Au‑delà, il n’a pas d’embedding positionnel défini (et on doit tronquer ou utiliser un mécanisme d’extension).
 
-![alt text](image.png)
+![alt text](img/image.png)
 
 On voit que les points suivent une trajectoire assez continue : quand la position augmente, les points avancent progressivement le long d’une courbe. Il n’y a pas vraiment de “clusters”, plutôt une suite ordonnée. La position 0 est très éloignée des autres (un outlier), ce qui peut vouloir dire que le début de séquence est représenté différemment.
 La PCA sert à réduire la dimension (ex. 768) en 2D pour pouvoir visualiser. Sans PCA, on ne peut pas “voir” la structure des embeddings, avec PCA on repère facilement la continuité, les outliers et la forme globale.
 
 
-![alt text](image-1.png)
+![alt text](img/image-1.png)
 
 Entre 0–50, on voit surtout une petite courbe assez simple et la position 0 ressort comme un point à part.
 Entre 0–200, l’échelle change et la forme devient beaucoup plus grande, on voit une sorte de grand arc presque “en boucle”.
@@ -220,14 +220,14 @@ The future of artificial intelligence is uncertain.
 "We're not sure what the future will look like," said Dr. Michael S. Schoen
 ```
 
-![alt text](image-2.png)
+![alt text](img/image-2.png)
 
 On fixe le seed et la génération est déterministe, donc le même prompt donne le même texte à chaque run.
 
 
 #### Question 5.c : Générez maintenant du texte avec sampling en utilisant : température = 0.7, top-k = 50, top-p = 0.95. Faites au moins 5 générations (en changeant le seed entre chaque, ou en utilisant un générateur).
 
-![alt text](image-3.png)
+![alt text](img/image-3.png)
 
 - Seed 1 : The future of artificial intelligence is up in the air, and the future of artificial intelligence is now about to change. For now, we're just waiting
 
