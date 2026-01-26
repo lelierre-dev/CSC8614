@@ -1,13 +1,20 @@
 .venv/
 __pycache__/
 .DS_Store
+*.zip
+*.csv
 
 
 
 /TP2/__pycache__/
 /TP2/gpt2_weights/
-
 /TP2/*.csv
-
 /TP2/sms_spam_collection/
 /TP2/sms_spam_collection.zip
+
+
+TP3/gpt2_weights/
+TP3/sms_spam_collection/
+TP3/sms_spam_collection.zip
+TP3/__pycache__/
+
