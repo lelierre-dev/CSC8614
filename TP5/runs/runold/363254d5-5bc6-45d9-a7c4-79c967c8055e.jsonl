@@ -1,0 +1,4 @@
+{"run_id": "363254d5-5bc6-45d9-a7c4-79c967c8055e", "ts": "2026-02-01T19:25:58.462965Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "363254d5-5bc6-45d9-a7c4-79c967c8055e", "ts": "2026-02-01T19:26:03.079639Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "ignore", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": false, "retrieval_query": "", "rationale": "Mise à jour de procédure administrative dans Moodle, pas d'urgences apparentes."}}}
+{"run_id": "363254d5-5bc6-45d9-a7c4-79c967c8055e", "ts": "2026-02-01T19:26:03.080812Z", "event": "node_start", "data": {"node": "stub_ignore"}}
+{"run_id": "363254d5-5bc6-45d9-a7c4-79c967c8055e", "ts": "2026-02-01T19:26:03.080893Z", "event": "node_end", "data": {"node": "stub_ignore", "status": "ok"}}

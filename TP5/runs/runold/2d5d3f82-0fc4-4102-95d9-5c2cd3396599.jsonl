@@ -1,0 +1,4 @@
+{"run_id": "2d5d3f82-0fc4-4102-95d9-5c2cd3396599", "ts": "2026-02-01T20:52:33.250498Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E12"}}
+{"run_id": "2d5d3f82-0fc4-4102-95d9-5c2cd3396599", "ts": "2026-02-01T20:52:37.892152Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "ask_clarification", "category": "admin", "priority": 3, "risk_level": "med", "needs_retrieval": false, "retrieval_query": "", "rationale": "Email contient des questions sur le règlement de scolarité concernant le plagiat."}}}
+{"run_id": "2d5d3f82-0fc4-4102-95d9-5c2cd3396599", "ts": "2026-02-01T20:52:37.892823Z", "event": "node_start", "data": {"node": "stub_ask_clarification"}}
+{"run_id": "2d5d3f82-0fc4-4102-95d9-5c2cd3396599", "ts": "2026-02-01T20:52:37.892892Z", "event": "node_end", "data": {"node": "stub_ask_clarification", "status": "ok"}}

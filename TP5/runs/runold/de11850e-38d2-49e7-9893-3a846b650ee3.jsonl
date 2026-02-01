@@ -1,0 +1,2 @@
+{"run_id": "de11850e-38d2-49e7-9893-3a846b650ee3", "ts": "2026-02-01T18:47:26.682372Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "de11850e-38d2-49e7-9893-3a846b650ee3", "ts": "2026-02-01T18:47:35.429421Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "procédure d'inscription", "rationale": "Demande administrative nécessitant une réponse factuelle."}}}

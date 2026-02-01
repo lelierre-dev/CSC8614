@@ -1,0 +1,4 @@
+{"run_id": "ca51b4b6-0023-4ef0-bdf1-b3e59c09593d", "ts": "2026-02-01T20:53:11.298792Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E12"}}
+{"run_id": "ca51b4b6-0023-4ef0-bdf1-b3e59c09593d", "ts": "2026-02-01T20:53:14.694259Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "ask_clarification", "category": "teaching", "priority": 3, "risk_level": "med", "needs_retrieval": false, "retrieval_query": "", "rationale": "Email contient des questions sur la politique académique concernant le plagiat."}}}
+{"run_id": "ca51b4b6-0023-4ef0-bdf1-b3e59c09593d", "ts": "2026-02-01T20:53:14.694873Z", "event": "node_start", "data": {"node": "stub_ask_clarification"}}
+{"run_id": "ca51b4b6-0023-4ef0-bdf1-b3e59c09593d", "ts": "2026-02-01T20:53:14.694945Z", "event": "node_end", "data": {"node": "stub_ask_clarification", "status": "ok"}}

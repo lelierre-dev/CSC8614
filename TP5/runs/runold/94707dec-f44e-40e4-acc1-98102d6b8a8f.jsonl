@@ -1,0 +1,4 @@
+{"run_id": "94707dec-f44e-40e4-acc1-98102d6b8a8f", "ts": "2026-02-01T20:01:13.191462Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E10"}}
+{"run_id": "94707dec-f44e-40e4-acc1-98102d6b8a8f", "ts": "2026-02-01T20:01:19.238868Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "ignore", "category": "admin", "priority": 5, "risk_level": "high", "needs_retrieval": true, "retrieval_query": "Mot de passe ENT et code SMS", "rationale": "Demande de données sensibles non justifiée"}}}
+{"run_id": "94707dec-f44e-40e4-acc1-98102d6b8a8f", "ts": "2026-02-01T20:01:19.240214Z", "event": "node_start", "data": {"node": "stub_ignore"}}
+{"run_id": "94707dec-f44e-40e4-acc1-98102d6b8a8f", "ts": "2026-02-01T20:01:19.240302Z", "event": "node_end", "data": {"node": "stub_ignore", "status": "ok"}}

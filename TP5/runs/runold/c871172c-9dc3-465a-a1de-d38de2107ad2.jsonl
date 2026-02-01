@@ -1,0 +1,7 @@
+{"run_id": "c871172c-9dc3-465a-a1de-d38de2107ad2", "ts": "2026-02-01T19:58:31.835064Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E11"}}
+{"run_id": "c871172c-9dc3-465a-a1de-d38de2107ad2", "ts": "2026-02-01T19:58:38.435878Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "formation d'apprentis-ingénieurs - durée et rythme alternance", "rationale": "Réponse demandant des informations administratives nécessitant une recherche."}}}
+{"run_id": "c871172c-9dc3-465a-a1de-d38de2107ad2", "ts": "2026-02-01T19:58:38.437419Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "c871172c-9dc3-465a-a1de-d38de2107ad2", "ts": "2026-02-01T19:58:40.167524Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "146cbd6d8570", "latency_ms": 1729, "status": "ok", "k": 4, "n_docs": 4}}
+{"run_id": "c871172c-9dc3-465a-a1de-d38de2107ad2", "ts": "2026-02-01T19:58:40.169087Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 4}}
+{"run_id": "c871172c-9dc3-465a-a1de-d38de2107ad2", "ts": "2026-02-01T19:58:40.171440Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "c871172c-9dc3-465a-a1de-d38de2107ad2", "ts": "2026-02-01T19:58:48.816081Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 2}}

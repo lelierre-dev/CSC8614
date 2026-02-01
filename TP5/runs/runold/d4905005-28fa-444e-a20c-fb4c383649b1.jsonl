@@ -1,0 +1,7 @@
+{"run_id": "d4905005-28fa-444e-a20c-fb4c383649b1", "ts": "2026-02-01T19:07:31.571459Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "d4905005-28fa-444e-a20c-fb4c383649b1", "ts": "2026-02-01T19:07:39.617755Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "procédure d'inscription", "rationale": "Demande administrative nécessitant une réponse factuelle."}}}
+{"run_id": "d4905005-28fa-444e-a20c-fb4c383649b1", "ts": "2026-02-01T19:07:39.621177Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "d4905005-28fa-444e-a20c-fb4c383649b1", "ts": "2026-02-01T19:07:41.586006Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "9482ced76b8b", "latency_ms": 1964, "status": "ok", "k": 4, "n_docs": 4}}
+{"run_id": "d4905005-28fa-444e-a20c-fb4c383649b1", "ts": "2026-02-01T19:07:41.587563Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 4}}
+{"run_id": "d4905005-28fa-444e-a20c-fb4c383649b1", "ts": "2026-02-01T19:07:41.590123Z", "event": "node_start", "data": {"node": "stub_reply"}}
+{"run_id": "d4905005-28fa-444e-a20c-fb4c383649b1", "ts": "2026-02-01T19:07:41.590201Z", "event": "node_end", "data": {"node": "stub_reply", "status": "ok"}}

@@ -1,0 +1,9 @@
+{"run_id": "f1413232-89f6-4b3f-9dec-2511a95da4ae", "ts": "2026-02-01T20:21:26.191420Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E11"}}
+{"run_id": "f1413232-89f6-4b3f-9dec-2511a95da4ae", "ts": "2026-02-01T20:21:35.378532Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "Durée normale de la formation d'apprentis-ingénieurs et rythme d'alternance pour les deux premières années, éventuelles variations en troisième année.", "rationale": "Réponse requiert des informations spécifiques du dossier."}}}
+{"run_id": "f1413232-89f6-4b3f-9dec-2511a95da4ae", "ts": "2026-02-01T20:21:35.382125Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "f1413232-89f6-4b3f-9dec-2511a95da4ae", "ts": "2026-02-01T20:21:37.248452Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "def8f90088d8", "latency_ms": 1866, "status": "ok", "k": 4, "n_docs": 4}}
+{"run_id": "f1413232-89f6-4b3f-9dec-2511a95da4ae", "ts": "2026-02-01T20:21:37.249849Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 4}}
+{"run_id": "f1413232-89f6-4b3f-9dec-2511a95da4ae", "ts": "2026-02-01T20:21:37.251799Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "f1413232-89f6-4b3f-9dec-2511a95da4ae", "ts": "2026-02-01T20:21:47.689021Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "f1413232-89f6-4b3f-9dec-2511a95da4ae", "ts": "2026-02-01T20:21:47.691585Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "f1413232-89f6-4b3f-9dec-2511a95da4ae", "ts": "2026-02-01T20:21:47.691689Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}

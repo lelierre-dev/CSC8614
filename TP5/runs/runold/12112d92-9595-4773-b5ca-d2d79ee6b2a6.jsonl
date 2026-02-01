@@ -1,0 +1,6 @@
+{"run_id": "12112d92-9595-4773-b5ca-d2d79ee6b2a6", "ts": "2026-02-01T19:53:56.122367Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E11"}}
+{"run_id": "12112d92-9595-4773-b5ca-d2d79ee6b2a6", "ts": "2026-02-01T19:54:00.696924Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "teaching", "priority": 3, "risk_level": "low", "needs_retrieval": false, "retrieval_query": "", "rationale": "Réponse standard sur la formation d'apprentis-ingénieurs."}}}
+{"run_id": "12112d92-9595-4773-b5ca-d2d79ee6b2a6", "ts": "2026-02-01T19:54:00.698156Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "12112d92-9595-4773-b5ca-d2d79ee6b2a6", "ts": "2026-02-01T19:54:00.698235Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "skipped"}}
+{"run_id": "12112d92-9595-4773-b5ca-d2d79ee6b2a6", "ts": "2026-02-01T19:54:00.698464Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "12112d92-9595-4773-b5ca-d2d79ee6b2a6", "ts": "2026-02-01T19:54:06.972368Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}

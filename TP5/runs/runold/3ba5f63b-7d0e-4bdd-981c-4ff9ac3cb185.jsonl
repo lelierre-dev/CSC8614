@@ -1,0 +1,4 @@
+{"run_id": "3ba5f63b-7d0e-4bdd-981c-4ff9ac3cb185", "ts": "2026-02-01T20:49:18.701256Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E12"}}
+{"run_id": "3ba5f63b-7d0e-4bdd-981c-4ff9ac3cb185", "ts": "2026-02-01T20:49:30.569123Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "ask_clarification", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": false, "retrieval_query": "", "rationale": "Email contient plusieurs questions administratives sur le règlement de scolarité, nécessitant des clarifications."}}}
+{"run_id": "3ba5f63b-7d0e-4bdd-981c-4ff9ac3cb185", "ts": "2026-02-01T20:49:30.572562Z", "event": "node_start", "data": {"node": "stub_ask_clarification"}}
+{"run_id": "3ba5f63b-7d0e-4bdd-981c-4ff9ac3cb185", "ts": "2026-02-01T20:49:30.572660Z", "event": "node_end", "data": {"node": "stub_ask_clarification", "status": "ok"}}

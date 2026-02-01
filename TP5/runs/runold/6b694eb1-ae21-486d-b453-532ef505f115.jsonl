@@ -1,0 +1,9 @@
+{"run_id": "6b694eb1-ae21-486d-b453-532ef505f115", "ts": "2026-02-01T20:26:01.305519Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E11"}}
+{"run_id": "6b694eb1-ae21-486d-b453-532ef505f115", "ts": "2026-02-01T20:26:06.778982Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "teaching", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "Durée normale de la formation d'apprentis-ingénieurs et rythme d'alternance en deux premières années.", "rationale": "Réponse nécessite des informations à retrouver dans les documents officiels."}}}
+{"run_id": "6b694eb1-ae21-486d-b453-532ef505f115", "ts": "2026-02-01T20:26:06.780093Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "6b694eb1-ae21-486d-b453-532ef505f115", "ts": "2026-02-01T20:26:07.434003Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "e410af505ffe", "latency_ms": 653, "status": "ok", "k": 4, "n_docs": 4}}
+{"run_id": "6b694eb1-ae21-486d-b453-532ef505f115", "ts": "2026-02-01T20:26:07.435982Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 4}}
+{"run_id": "6b694eb1-ae21-486d-b453-532ef505f115", "ts": "2026-02-01T20:26:07.436491Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "6b694eb1-ae21-486d-b453-532ef505f115", "ts": "2026-02-01T20:26:16.209456Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 2}}
+{"run_id": "6b694eb1-ae21-486d-b453-532ef505f115", "ts": "2026-02-01T20:26:16.211217Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "6b694eb1-ae21-486d-b453-532ef505f115", "ts": "2026-02-01T20:26:16.211321Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}

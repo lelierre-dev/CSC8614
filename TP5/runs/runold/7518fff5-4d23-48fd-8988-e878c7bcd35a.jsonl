@@ -1,0 +1,4 @@
+{"run_id": "7518fff5-4d23-48fd-8988-e878c7bcd35a", "ts": "2026-02-01T20:52:52.893898Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E12"}}
+{"run_id": "7518fff5-4d23-48fd-8988-e878c7bcd35a", "ts": "2026-02-01T20:52:57.059910Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "ask_clarification", "category": "admin", "priority": 3, "risk_level": "med", "needs_retrieval": true, "retrieval_query": "Règlement de scolarité FISA - plagiat et responsabilité collective", "rationale": "Email demande des clarifications sur les règles d’anti-plagiat, nécessitant une recherche."}}}
+{"run_id": "7518fff5-4d23-48fd-8988-e878c7bcd35a", "ts": "2026-02-01T20:52:57.061291Z", "event": "node_start", "data": {"node": "stub_ask_clarification"}}
+{"run_id": "7518fff5-4d23-48fd-8988-e878c7bcd35a", "ts": "2026-02-01T20:52:57.061533Z", "event": "node_end", "data": {"node": "stub_ask_clarification", "status": "ok"}}

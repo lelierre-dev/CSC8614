@@ -1,0 +1,4 @@
+{"run_id": "35fc637a-602d-40f6-be7d-e702475382b7", "ts": "2026-02-01T19:24:28.312989Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E06"}}
+{"run_id": "35fc637a-602d-40f6-be7d-e702475382b7", "ts": "2026-02-01T19:24:36.394239Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "ask_clarification", "category": "research", "priority": 3, "risk_level": "low", "needs_retrieval": false, "retrieval_query": "", "rationale": "Email requiert des clarifications sur le rendu final du projet RSE."}}}
+{"run_id": "35fc637a-602d-40f6-be7d-e702475382b7", "ts": "2026-02-01T19:24:36.396404Z", "event": "node_start", "data": {"node": "stub_ask_clarification"}}
+{"run_id": "35fc637a-602d-40f6-be7d-e702475382b7", "ts": "2026-02-01T19:24:36.396502Z", "event": "node_end", "data": {"node": "stub_ask_clarification", "status": "ok"}}

@@ -1,0 +1,4 @@
+{"run_id": "9d28c92f-883c-4ce5-b490-f26cddf6c543", "ts": "2026-02-01T20:38:47.115683Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E11"}}
+{"run_id": "9d28c92f-883c-4ce5-b490-f26cddf6c543", "ts": "2026-02-01T20:38:50.531694Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "ask_clarification", "category": "admin", "priority": 3, "risk_level": "med", "needs_retrieval": false, "retrieval_query": "", "rationale": "Email contient plusieurs questions administratives sur l'admission provisoire et ses conditions."}}}
+{"run_id": "9d28c92f-883c-4ce5-b490-f26cddf6c543", "ts": "2026-02-01T20:38:50.533167Z", "event": "node_start", "data": {"node": "stub_ask_clarification"}}
+{"run_id": "9d28c92f-883c-4ce5-b490-f26cddf6c543", "ts": "2026-02-01T20:38:50.533261Z", "event": "node_end", "data": {"node": "stub_ask_clarification", "status": "ok"}}

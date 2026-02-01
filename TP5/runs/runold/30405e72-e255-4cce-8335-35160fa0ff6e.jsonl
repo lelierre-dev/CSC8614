@@ -1,0 +1,6 @@
+{"run_id": "30405e72-e255-4cce-8335-35160fa0ff6e", "ts": "2026-02-01T19:50:40.529593Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E11"}}
+{"run_id": "30405e72-e255-4cce-8335-35160fa0ff6e", "ts": "2026-02-01T19:50:45.370888Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "teaching", "priority": 3, "risk_level": "low", "needs_retrieval": false, "retrieval_query": "", "rationale": "Réponse standard sur la formation d'apprentis-ingénieurs."}}}
+{"run_id": "30405e72-e255-4cce-8335-35160fa0ff6e", "ts": "2026-02-01T19:50:45.373216Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "30405e72-e255-4cce-8335-35160fa0ff6e", "ts": "2026-02-01T19:50:45.373329Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "skipped"}}
+{"run_id": "30405e72-e255-4cce-8335-35160fa0ff6e", "ts": "2026-02-01T19:50:45.373594Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "30405e72-e255-4cce-8335-35160fa0ff6e", "ts": "2026-02-01T19:50:53.256067Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}

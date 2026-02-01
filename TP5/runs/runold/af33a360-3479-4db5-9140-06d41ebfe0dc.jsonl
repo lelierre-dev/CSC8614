@@ -1,0 +1,6 @@
+{"run_id": "af33a360-3479-4db5-9140-06d41ebfe0dc", "ts": "2026-02-01T19:47:55.991434Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E11"}}
+{"run_id": "af33a360-3479-4db5-9140-06d41ebfe0dc", "ts": "2026-02-01T19:48:03.810812Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "teaching", "priority": 3, "risk_level": "low", "needs_retrieval": false, "retrieval_query": "", "rationale": "Réponse standard sur la formation et l'alternance."}}}
+{"run_id": "af33a360-3479-4db5-9140-06d41ebfe0dc", "ts": "2026-02-01T19:48:03.813877Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "af33a360-3479-4db5-9140-06d41ebfe0dc", "ts": "2026-02-01T19:48:03.813986Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "skipped"}}
+{"run_id": "af33a360-3479-4db5-9140-06d41ebfe0dc", "ts": "2026-02-01T19:48:03.814260Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "af33a360-3479-4db5-9140-06d41ebfe0dc", "ts": "2026-02-01T19:48:13.886907Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}

@@ -1,0 +1,4 @@
+{"run_id": "cddfcc10-5542-4763-a2ff-220d8f3f5512", "ts": "2026-02-01T18:58:14.723389Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "cddfcc10-5542-4763-a2ff-220d8f3f5512", "ts": "2026-02-01T18:58:22.776069Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "procédure d'inscription", "rationale": "Demande administrative nécessitant une réponse factuelle."}}}
+{"run_id": "cddfcc10-5542-4763-a2ff-220d8f3f5512", "ts": "2026-02-01T18:58:22.779124Z", "event": "node_start", "data": {"node": "stub_reply"}}
+{"run_id": "cddfcc10-5542-4763-a2ff-220d8f3f5512", "ts": "2026-02-01T18:58:22.779244Z", "event": "node_end", "data": {"node": "stub_reply", "status": "ok"}}

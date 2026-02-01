@@ -1,0 +1,8 @@
+{"run_id": "6c8b697d-1d8d-43b2-961b-5b727d84472a", "ts": "2026-02-01T20:35:26.521604Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E11"}}
+{"run_id": "6c8b697d-1d8d-43b2-961b-5b727d84472a", "ts": "2026-02-01T20:35:32.726913Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "med", "needs_retrieval": false, "retrieval_query": "", "rationale": "Réponses nécessaires pour clarifier les conditions d'admission."}}}
+{"run_id": "6c8b697d-1d8d-43b2-961b-5b727d84472a", "ts": "2026-02-01T20:35:32.727981Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "6c8b697d-1d8d-43b2-961b-5b727d84472a", "ts": "2026-02-01T20:35:32.728065Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "skipped"}}
+{"run_id": "6c8b697d-1d8d-43b2-961b-5b727d84472a", "ts": "2026-02-01T20:35:32.728329Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "6c8b697d-1d8d-43b2-961b-5b727d84472a", "ts": "2026-02-01T20:35:56.931847Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "6c8b697d-1d8d-43b2-961b-5b727d84472a", "ts": "2026-02-01T20:35:56.940250Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "6c8b697d-1d8d-43b2-961b-5b727d84472a", "ts": "2026-02-01T20:35:56.940444Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 0}}

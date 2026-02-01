@@ -1,0 +1,9 @@
+{"run_id": "d476ab7d-01e1-4ee3-b262-1dab0f89bdc4", "ts": "2026-02-01T20:54:57.749192Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E12"}}
+{"run_id": "d476ab7d-01e1-4ee3-b262-1dab0f89bdc4", "ts": "2026-02-01T20:55:02.965935Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "teaching", "priority": 3, "risk_level": "med", "needs_retrieval": true, "retrieval_query": "Règlement de scolarité FISA concernant la responsabilité collective et le plagiat.", "rationale": "Le message nécessite des informations spécifiques pour être complété."}}}
+{"run_id": "d476ab7d-01e1-4ee3-b262-1dab0f89bdc4", "ts": "2026-02-01T20:55:02.967232Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "d476ab7d-01e1-4ee3-b262-1dab0f89bdc4", "ts": "2026-02-01T20:55:04.676084Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "300395471997", "latency_ms": 1708, "status": "ok", "k": 4, "n_docs": 4}}
+{"run_id": "d476ab7d-01e1-4ee3-b262-1dab0f89bdc4", "ts": "2026-02-01T20:55:04.677621Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 4}}
+{"run_id": "d476ab7d-01e1-4ee3-b262-1dab0f89bdc4", "ts": "2026-02-01T20:55:04.681125Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "d476ab7d-01e1-4ee3-b262-1dab0f89bdc4", "ts": "2026-02-01T20:55:15.184713Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "d476ab7d-01e1-4ee3-b262-1dab0f89bdc4", "ts": "2026-02-01T20:55:15.186045Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "d476ab7d-01e1-4ee3-b262-1dab0f89bdc4", "ts": "2026-02-01T20:55:15.186137Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}

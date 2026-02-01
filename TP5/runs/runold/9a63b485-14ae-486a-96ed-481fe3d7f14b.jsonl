@@ -1,0 +1,4 @@
+{"run_id": "9a63b485-14ae-486a-96ed-481fe3d7f14b", "ts": "2026-02-01T20:38:16.000903Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E11"}}
+{"run_id": "9a63b485-14ae-486a-96ed-481fe3d7f14b", "ts": "2026-02-01T20:38:19.517751Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "ask_clarification", "category": "admin", "priority": 3, "risk_level": "med", "needs_retrieval": false, "retrieval_query": "", "rationale": "Email contient plusieurs questions sur les conditions d'admission, nécessitant des clarifications administratives."}}}
+{"run_id": "9a63b485-14ae-486a-96ed-481fe3d7f14b", "ts": "2026-02-01T20:38:19.519086Z", "event": "node_start", "data": {"node": "stub_ask_clarification"}}
+{"run_id": "9a63b485-14ae-486a-96ed-481fe3d7f14b", "ts": "2026-02-01T20:38:19.519171Z", "event": "node_end", "data": {"node": "stub_ask_clarification", "status": "ok"}}

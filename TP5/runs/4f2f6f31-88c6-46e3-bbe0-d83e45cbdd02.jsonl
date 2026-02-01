@@ -1,0 +1,4 @@
+{"run_id": "4f2f6f31-88c6-46e3-bbe0-d83e45cbdd02", "ts": "2026-02-01T21:04:40.466454Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E12"}}
+{"run_id": "4f2f6f31-88c6-46e3-bbe0-d83e45cbdd02", "ts": "2026-02-01T21:04:44.519499Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "ask_clarification", "category": "admin", "priority": 3, "risk_level": "med", "needs_retrieval": true, "retrieval_query": "Règlement de scolarité FISA applicabilité, procédures de note et validation des UE", "rationale": "Réponses nécessaires pour clarifier plusieurs points administratifs importants."}}}
+{"run_id": "4f2f6f31-88c6-46e3-bbe0-d83e45cbdd02", "ts": "2026-02-01T21:04:44.520237Z", "event": "node_start", "data": {"node": "stub_ask_clarification"}}
+{"run_id": "4f2f6f31-88c6-46e3-bbe0-d83e45cbdd02", "ts": "2026-02-01T21:04:44.520321Z", "event": "node_end", "data": {"node": "stub_ask_clarification", "status": "ok"}}

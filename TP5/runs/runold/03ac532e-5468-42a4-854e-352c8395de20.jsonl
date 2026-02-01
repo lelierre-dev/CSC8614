@@ -1,0 +1,7 @@
+{"run_id": "03ac532e-5468-42a4-854e-352c8395de20", "ts": "2026-02-01T19:36:09.871370Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E11"}}
+{"run_id": "03ac532e-5468-42a4-854e-352c8395de20", "ts": "2026-02-01T19:36:16.321892Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "Durée et rythme d'alternance pour formation apprentis-ingénieurs", "rationale": "Réponse requiert des informations spécifiques sur la formation."}}}
+{"run_id": "03ac532e-5468-42a4-854e-352c8395de20", "ts": "2026-02-01T19:36:16.324580Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "03ac532e-5468-42a4-854e-352c8395de20", "ts": "2026-02-01T19:36:18.053698Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "e23c1bccac43", "latency_ms": 1728, "status": "ok", "k": 4, "n_docs": 4}}
+{"run_id": "03ac532e-5468-42a4-854e-352c8395de20", "ts": "2026-02-01T19:36:18.054680Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 4}}
+{"run_id": "03ac532e-5468-42a4-854e-352c8395de20", "ts": "2026-02-01T19:36:18.055133Z", "event": "node_start", "data": {"node": "stub_reply"}}
+{"run_id": "03ac532e-5468-42a4-854e-352c8395de20", "ts": "2026-02-01T19:36:18.055205Z", "event": "node_end", "data": {"node": "stub_reply", "status": "ok"}}
