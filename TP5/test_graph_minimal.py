@@ -6,15 +6,19 @@ from TP5.agent.graph_minimal import build_graph
 
 if __name__ == "__main__":
     emails = load_all_emails()
-    e = emails[11]
+    e = emails[9]
 
+    run_id = str(uuid.uuid4())
     state = AgentState(
-        run_id=str(uuid.uuid4()),
+        run_id=run_id,
         email_id=e["email_id"],
         subject=e["subject"],
         sender=e["from"],
         body=e["body"],
     )
+
+    print("=== RUN_ID ===")
+    print(run_id)
 
     app = build_graph()
     out = app.invoke(state)
@@ -31,3 +35,6 @@ if __name__ == "__main__":
     print(len(out["evidence"]))
     print("\n=== EVIDENCE (first) ===")
     print(out["evidence"][0].model_dump() if out["evidence"] else {})
+    print("\n=== FINAL ===")
+    print("kind =", out["final_kind"])
+    print(out["final_text"])

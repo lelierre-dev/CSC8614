@@ -1,0 +1,6 @@
+{"run_id": "94669669-92c4-4623-bd36-ec306faddf83", "ts": "2026-02-01T23:47:41.263736Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E09"}}
+{"run_id": "94669669-92c4-4623-bd36-ec306faddf83", "ts": "2026-02-01T23:47:49.594804Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "ignore", "category": "other", "priority": 2, "risk_level": "low", "needs_retrieval": false, "retrieval_query": "", "rationale": "Offre promotionnelle inutile, date d'expiration lointaine."}}}
+{"run_id": "94669669-92c4-4623-bd36-ec306faddf83", "ts": "2026-02-01T23:47:49.600118Z", "event": "node_start", "data": {"node": "stub_ignore"}}
+{"run_id": "94669669-92c4-4623-bd36-ec306faddf83", "ts": "2026-02-01T23:47:49.600461Z", "event": "node_end", "data": {"node": "stub_ignore", "status": "ok"}}
+{"run_id": "94669669-92c4-4623-bd36-ec306faddf83", "ts": "2026-02-01T23:47:49.601335Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "94669669-92c4-4623-bd36-ec306faddf83", "ts": "2026-02-01T23:47:49.601484Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "ignore"}}

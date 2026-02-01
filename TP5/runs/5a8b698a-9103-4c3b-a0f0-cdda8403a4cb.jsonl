@@ -1,0 +1,11 @@
+{"run_id": "5a8b698a-9103-4c3b-a0f0-cdda8403a4cb", "ts": "2026-02-01T23:48:20.211518Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E11"}}
+{"run_id": "5a8b698a-9103-4c3b-a0f0-cdda8403a4cb", "ts": "2026-02-01T23:48:26.689658Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "teaching", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "Durée normale de la formation d'apprentis-ingénieurs et rythme d'alternance pour les deux premières années, éventuelles modifications en troisième année.", "rationale": "Email contient des questions précises sur le programme de formation qui nécessitent une vérification des informations."}}}
+{"run_id": "5a8b698a-9103-4c3b-a0f0-cdda8403a4cb", "ts": "2026-02-01T23:48:26.691030Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "5a8b698a-9103-4c3b-a0f0-cdda8403a4cb", "ts": "2026-02-01T23:48:28.404570Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "fb82a898db2d", "latency_ms": 1713, "status": "ok", "k": 4, "n_docs": 4}}
+{"run_id": "5a8b698a-9103-4c3b-a0f0-cdda8403a4cb", "ts": "2026-02-01T23:48:28.407743Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 4}}
+{"run_id": "5a8b698a-9103-4c3b-a0f0-cdda8403a4cb", "ts": "2026-02-01T23:48:28.412395Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "5a8b698a-9103-4c3b-a0f0-cdda8403a4cb", "ts": "2026-02-01T23:48:37.205003Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "5a8b698a-9103-4c3b-a0f0-cdda8403a4cb", "ts": "2026-02-01T23:48:37.206388Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "5a8b698a-9103-4c3b-a0f0-cdda8403a4cb", "ts": "2026-02-01T23:48:37.206474Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}
+{"run_id": "5a8b698a-9103-4c3b-a0f0-cdda8403a4cb", "ts": "2026-02-01T23:48:37.206939Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "5a8b698a-9103-4c3b-a0f0-cdda8403a4cb", "ts": "2026-02-01T23:48:37.207041Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}
