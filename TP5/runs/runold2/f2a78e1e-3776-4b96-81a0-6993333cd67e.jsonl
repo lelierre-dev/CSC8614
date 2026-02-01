@@ -1,0 +1,8 @@
+{"run_id": "f2a78e1e-3776-4b96-81a0-6993333cd67e", "ts": "2026-02-01T21:21:00.561990Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E12"}}
+{"run_id": "f2a78e1e-3776-4b96-81a0-6993333cd67e", "ts": "2026-02-01T21:21:08.117985Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": false, "retrieval_query": "", "rationale": "Réponses administratives standard sur le règlement de scolarité."}}}
+{"run_id": "f2a78e1e-3776-4b96-81a0-6993333cd67e", "ts": "2026-02-01T21:21:08.119378Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "f2a78e1e-3776-4b96-81a0-6993333cd67e", "ts": "2026-02-01T21:21:08.119473Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "skipped"}}
+{"run_id": "f2a78e1e-3776-4b96-81a0-6993333cd67e", "ts": "2026-02-01T21:21:08.119748Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "f2a78e1e-3776-4b96-81a0-6993333cd67e", "ts": "2026-02-01T21:21:39.931629Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "f2a78e1e-3776-4b96-81a0-6993333cd67e", "ts": "2026-02-01T21:21:39.935392Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "f2a78e1e-3776-4b96-81a0-6993333cd67e", "ts": "2026-02-01T21:21:39.935528Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": true, "retrieval_attempts": 0}}

@@ -1,0 +1,8 @@
+{"run_id": "01dce513-a588-4ee2-9957-9f0e0e838c03", "ts": "2026-02-01T21:20:09.779426Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E12"}}
+{"run_id": "01dce513-a588-4ee2-9957-9f0e0e838c03", "ts": "2026-02-01T21:20:17.596359Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "med", "needs_retrieval": false, "retrieval_query": "", "rationale": "Réponses administratives requises pour clarifier les points de règlement."}}}
+{"run_id": "01dce513-a588-4ee2-9957-9f0e0e838c03", "ts": "2026-02-01T21:20:17.597892Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "01dce513-a588-4ee2-9957-9f0e0e838c03", "ts": "2026-02-01T21:20:17.597973Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "skipped"}}
+{"run_id": "01dce513-a588-4ee2-9957-9f0e0e838c03", "ts": "2026-02-01T21:20:17.598219Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "01dce513-a588-4ee2-9957-9f0e0e838c03", "ts": "2026-02-01T21:20:50.239698Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "invalid_json"}}
+{"run_id": "01dce513-a588-4ee2-9957-9f0e0e838c03", "ts": "2026-02-01T21:20:50.242785Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "01dce513-a588-4ee2-9957-9f0e0e838c03", "ts": "2026-02-01T21:20:50.242948Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 0}}

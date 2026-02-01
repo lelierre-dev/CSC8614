@@ -1,0 +1,18 @@
+{"run_id": "bbc4341a-ae32-4f62-ad35-2dff1156c85b", "ts": "2026-02-01T23:24:50.072647Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E12"}}
+{"run_id": "bbc4341a-ae32-4f62-ad35-2dff1156c85b", "ts": "2026-02-01T23:25:02.626217Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "med", "needs_retrieval": true, "retrieval_query": "Règlement de scolarité FISA pour les catégories d'étudiants mentionnées et consignes spécifiques à chaque catégorie.", "rationale": "Réponses nécessitent une vérification des règles exactes pour chacune des catégories mentionnées."}}}
+{"run_id": "bbc4341a-ae32-4f62-ad35-2dff1156c85b", "ts": "2026-02-01T23:25:02.629972Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "bbc4341a-ae32-4f62-ad35-2dff1156c85b", "ts": "2026-02-01T23:25:04.231478Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "0c96c620c16e", "latency_ms": 1601, "status": "ok", "k": 4, "n_docs": 4}}
+{"run_id": "bbc4341a-ae32-4f62-ad35-2dff1156c85b", "ts": "2026-02-01T23:25:04.232832Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 4}}
+{"run_id": "bbc4341a-ae32-4f62-ad35-2dff1156c85b", "ts": "2026-02-01T23:25:04.233438Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "bbc4341a-ae32-4f62-ad35-2dff1156c85b", "ts": "2026-02-01T23:25:35.158086Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "bbc4341a-ae32-4f62-ad35-2dff1156c85b", "ts": "2026-02-01T23:25:35.160754Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "bbc4341a-ae32-4f62-ad35-2dff1156c85b", "ts": "2026-02-01T23:25:35.160841Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}
+{"run_id": "bbc4341a-ae32-4f62-ad35-2dff1156c85b", "ts": "2026-02-01T23:25:35.161506Z", "event": "node_start", "data": {"node": "rewrite_query"}}
+{"run_id": "bbc4341a-ae32-4f62-ad35-2dff1156c85b", "ts": "2026-02-01T23:25:37.349977Z", "event": "node_end", "data": {"node": "rewrite_query", "status": "ok", "q2": "règlement FISA applicabilité apprentis stagiaires auditeurs"}}
+{"run_id": "bbc4341a-ae32-4f62-ad35-2dff1156c85b", "ts": "2026-02-01T23:25:37.350656Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "bbc4341a-ae32-4f62-ad35-2dff1156c85b", "ts": "2026-02-01T23:25:37.619372Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "c0fb2dd1a62e", "latency_ms": 268, "status": "ok", "k": 4, "n_docs": 4}}
+{"run_id": "bbc4341a-ae32-4f62-ad35-2dff1156c85b", "ts": "2026-02-01T23:25:37.620410Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 4}}
+{"run_id": "bbc4341a-ae32-4f62-ad35-2dff1156c85b", "ts": "2026-02-01T23:25:37.620805Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "bbc4341a-ae32-4f62-ad35-2dff1156c85b", "ts": "2026-02-01T23:26:09.373072Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "invalid_json"}}
+{"run_id": "bbc4341a-ae32-4f62-ad35-2dff1156c85b", "ts": "2026-02-01T23:26:09.376616Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "bbc4341a-ae32-4f62-ad35-2dff1156c85b", "ts": "2026-02-01T23:26:09.376686Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 2}}

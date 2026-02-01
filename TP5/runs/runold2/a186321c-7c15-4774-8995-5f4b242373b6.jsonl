@@ -1,0 +1,8 @@
+{"run_id": "a186321c-7c15-4774-8995-5f4b242373b6", "ts": "2026-02-01T21:24:27.787913Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E12"}}
+{"run_id": "a186321c-7c15-4774-8995-5f4b242373b6", "ts": "2026-02-01T21:24:35.327674Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "med", "needs_retrieval": false, "retrieval_query": "", "rationale": "Réponses aux questions administratives sur le règlement scolaire."}}}
+{"run_id": "a186321c-7c15-4774-8995-5f4b242373b6", "ts": "2026-02-01T21:24:35.328378Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "a186321c-7c15-4774-8995-5f4b242373b6", "ts": "2026-02-01T21:24:35.328452Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "skipped"}}
+{"run_id": "a186321c-7c15-4774-8995-5f4b242373b6", "ts": "2026-02-01T21:24:35.328718Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "a186321c-7c15-4774-8995-5f4b242373b6", "ts": "2026-02-01T21:25:04.643738Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "a186321c-7c15-4774-8995-5f4b242373b6", "ts": "2026-02-01T21:25:04.644872Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "a186321c-7c15-4774-8995-5f4b242373b6", "ts": "2026-02-01T21:25:04.644966Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": true, "retrieval_attempts": 0}}

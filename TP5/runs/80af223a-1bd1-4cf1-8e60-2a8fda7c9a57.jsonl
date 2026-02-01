@@ -1,0 +1,4 @@
+{"run_id": "80af223a-1bd1-4cf1-8e60-2a8fda7c9a57", "ts": "2026-02-01T22:50:57.178864Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E10"}}
+{"run_id": "80af223a-1bd1-4cf1-8e60-2a8fda7c9a57", "ts": "2026-02-01T22:51:02.850665Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "escalate", "category": "admin", "priority": 5, "risk_level": "high", "needs_retrieval": true, "retrieval_query": "Quelles sont les politiques de confidentialité en vigueur concernant le partage du mot de passe ENT et du code SMS ?", "rationale": "Email demandant des informations sensibles non autorisées."}}}
+{"run_id": "80af223a-1bd1-4cf1-8e60-2a8fda7c9a57", "ts": "2026-02-01T22:51:02.852228Z", "event": "node_start", "data": {"node": "stub_escalate"}}
+{"run_id": "80af223a-1bd1-4cf1-8e60-2a8fda7c9a57", "ts": "2026-02-01T22:51:02.852373Z", "event": "node_end", "data": {"node": "stub_escalate", "status": "ok"}}

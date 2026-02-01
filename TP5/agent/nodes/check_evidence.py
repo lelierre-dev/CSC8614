@@ -5,7 +5,7 @@ from TP5.agent.state import AgentState
 def check_evidence(state: AgentState) -> AgentState:
     log_event(state.run_id, "node_start", {"node": "check_evidence"})
 
-    state.evidence_ok = state.last_draft_had_valid_citations
+    state.evidence_ok = state.last_draft_had_valid_citations 
 
     log_event(state.run_id, "node_end", {
         "node": "check_evidence",

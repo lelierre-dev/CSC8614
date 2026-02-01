@@ -24,7 +24,8 @@ Contraintes:
 - retrieval_query string courte, vide si needs_retrieval=false
 - rationale: 1 phrase max (pas de données sensibles)
 
-n’utilise jamais ask_clarification
+needs_retrieval est true si tu juges que l'email nécessite de rechercher des informations supplémentaires avant de répondre.
+ne met JAMAIS "ask_clarification" dans intent.
 
 Retourne EXACTEMENT ce JSON (mêmes clés, les valeurs sont des exemples) :
 {{
@@ -32,7 +33,7 @@ Retourne EXACTEMENT ce JSON (mêmes clés, les valeurs sont des exemples) :
   "category": "xx",
   "priority": x,
   "risk_level": "x",
-  "needs_retrieval": x,
+  "needs_retrieval": true,
   "retrieval_query": "xx",
   "rationale": "x"
 }}

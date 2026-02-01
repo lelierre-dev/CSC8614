@@ -64,7 +64,10 @@ def draft_reply(state: AgentState) -> AgentState:
 
     if not state.evidence and state.decision.needs_retrieval:
         state.last_draft_had_valid_citations = False
-        state.draft_v1 = safe_mode_reply(state, "no_evidence")
+        if not state.draft_v1:
+            state.draft_v1 = safe_mode_reply(state, "no_evidence")
+        else:
+            state.draft_v2 = safe_mode_reply(state, "no_evidence")
         log_event(state.run_id, "node_end", {"node": "draft_reply", "status": "safe_mode", "reason": "no_evidence"})
         return state
 
@@ -79,18 +82,27 @@ def draft_reply(state: AgentState) -> AgentState:
     except Exception as e:
         state.add_error(f"draft_reply json parse error: {e}")
         state.last_draft_had_valid_citations = False
-        state.draft_v1 = safe_mode_reply(state, "invalid_json")
+        if not state.draft_v1:
+            state.draft_v1 = safe_mode_reply(state, "invalid_json")
+        else:
+            state.draft_v2 = safe_mode_reply(state, "invalid_json")
         log_event(state.run_id, "node_end", {"node": "draft_reply", "status": "safe_mode", "reason": "invalid_json"})
         return state
 
     valid_ids = {d.doc_id for d in state.evidence}
     if (not citations or any(c not in valid_ids for c in citations)) and state.decision.needs_retrieval:
-        state.draft_v1 = safe_mode_reply(state, "invalid_citations")
+        if not state.draft_v1:
+            state.draft_v1 = safe_mode_reply(state, "invalid_citations")
+        else:
+            state.draft_v2 = safe_mode_reply(state, "invalid_citations")
         state.last_draft_had_valid_citations = False
         log_event(state.run_id, "node_end", {"node": "draft_reply", "status": "safe_mode", "reason": "invalid_citations"})
         return state
 
     state.last_draft_had_valid_citations = True
-    state.draft_v1 = reply_text
+    if state.budget.retrieval_attempts >= 2 and state.draft_v1:
+        state.draft_v2 = reply_text
+    else:
+        state.draft_v1 = reply_text
     log_event(state.run_id, "node_end", {"node": "draft_reply", "status": "ok", "n_citations": len(citations)})
     return state

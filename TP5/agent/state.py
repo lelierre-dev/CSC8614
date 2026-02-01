@@ -75,6 +75,9 @@ class AgentState(BaseModel):
     draft_v1: str = ""
     draft_v2: str = ""
 
+    final_text: str = ""
+    final_kind: str = ""
+
     actions: List[Dict[str, Any]] = Field(default_factory=list)   # actions mockées
     errors: List[str] = Field(default_factory=list)
 

@@ -1,0 +1,18 @@
+{"run_id": "513c96fa-2e6a-404f-8470-d83e73beb071", "ts": "2026-02-01T21:36:28.420854Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E10"}}
+{"run_id": "513c96fa-2e6a-404f-8470-d83e73beb071", "ts": "2026-02-01T21:36:36.824403Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 5, "risk_level": "high", "needs_retrieval": true, "retrieval_query": "Mot de passe ENT et code SMS reçu", "rationale": "Contient des informations sensibles non sollicitées."}}}
+{"run_id": "513c96fa-2e6a-404f-8470-d83e73beb071", "ts": "2026-02-01T21:36:36.826962Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "513c96fa-2e6a-404f-8470-d83e73beb071", "ts": "2026-02-01T21:36:38.493010Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "76f2e3c795b3", "latency_ms": 1665, "status": "ok", "k": 4, "n_docs": 4}}
+{"run_id": "513c96fa-2e6a-404f-8470-d83e73beb071", "ts": "2026-02-01T21:36:38.494011Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 4}}
+{"run_id": "513c96fa-2e6a-404f-8470-d83e73beb071", "ts": "2026-02-01T21:36:38.494460Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "513c96fa-2e6a-404f-8470-d83e73beb071", "ts": "2026-02-01T21:36:47.059813Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 2}}
+{"run_id": "513c96fa-2e6a-404f-8470-d83e73beb071", "ts": "2026-02-01T21:36:47.062907Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "513c96fa-2e6a-404f-8470-d83e73beb071", "ts": "2026-02-01T21:36:47.063150Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}
+{"run_id": "513c96fa-2e6a-404f-8470-d83e73beb071", "ts": "2026-02-01T21:36:47.063874Z", "event": "node_start", "data": {"node": "rewrite_query"}}
+{"run_id": "513c96fa-2e6a-404f-8470-d83e73beb071", "ts": "2026-02-01T21:36:48.612201Z", "event": "node_end", "data": {"node": "rewrite_query", "status": "ok", "q2": "mot de passe ENT et INE"}}
+{"run_id": "513c96fa-2e6a-404f-8470-d83e73beb071", "ts": "2026-02-01T21:36:48.612760Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "513c96fa-2e6a-404f-8470-d83e73beb071", "ts": "2026-02-01T21:36:48.820915Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "c282e639f9cb", "latency_ms": 207, "status": "ok", "k": 4, "n_docs": 4}}
+{"run_id": "513c96fa-2e6a-404f-8470-d83e73beb071", "ts": "2026-02-01T21:36:48.821777Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 4}}
+{"run_id": "513c96fa-2e6a-404f-8470-d83e73beb071", "ts": "2026-02-01T21:36:48.822144Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "513c96fa-2e6a-404f-8470-d83e73beb071", "ts": "2026-02-01T21:36:58.200591Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "513c96fa-2e6a-404f-8470-d83e73beb071", "ts": "2026-02-01T21:36:58.202929Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "513c96fa-2e6a-404f-8470-d83e73beb071", "ts": "2026-02-01T21:36:58.203035Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 2}}

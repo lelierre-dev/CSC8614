@@ -23,6 +23,8 @@ if __name__ == "__main__":
     print(out["decision"].model_dump_json(indent=2))
     print("\n=== DRAFT_V1 ===")
     print(out["draft_v1"])   # TODO: afficher draft_v1
+    print("\n=== DRAFT_V2 ===")
+    print(out["draft_v2"])   # TODO: afficher draft_v2
     print("\n=== ACTIONS ===")
     print(out["actions"])   # TODO: afficher actions
     print("\n=== EVIDENCE (n) ===")
