@@ -18,3 +18,7 @@ TP3/sms_spam_collection/
 TP3/sms_spam_collection.zip
 TP3/__pycache__/
 
+TP4/chroma_db/
+TP4/data/
+TP4/eval/
+
