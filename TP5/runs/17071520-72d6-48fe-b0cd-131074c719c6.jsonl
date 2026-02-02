@@ -1,0 +1,11 @@
+{"run_id": "17071520-72d6-48fe-b0cd-131074c719c6", "ts": "2026-02-02T01:02:16.473430Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E11"}}
+{"run_id": "17071520-72d6-48fe-b0cd-131074c719c6", "ts": "2026-02-02T01:02:23.056933Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "teaching", "priority": 2, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "Durée normale de la formation d'apprentis-ingénieurs et rythme d'alternance en deux premières années, éventuelles variations pour la troisième année.", "rationale": "Email contient des questions sur les modalités pratiques de la formation qui nécessitent une recherche."}}}
+{"run_id": "17071520-72d6-48fe-b0cd-131074c719c6", "ts": "2026-02-02T01:02:23.057538Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "17071520-72d6-48fe-b0cd-131074c719c6", "ts": "2026-02-02T01:02:23.425777Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "42478972aa47", "latency_ms": 368, "status": "ok", "k": 4, "n_docs": 4}}
+{"run_id": "17071520-72d6-48fe-b0cd-131074c719c6", "ts": "2026-02-02T01:02:23.426933Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 4}}
+{"run_id": "17071520-72d6-48fe-b0cd-131074c719c6", "ts": "2026-02-02T01:02:23.427527Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "17071520-72d6-48fe-b0cd-131074c719c6", "ts": "2026-02-02T01:02:31.552541Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 2}}
+{"run_id": "17071520-72d6-48fe-b0cd-131074c719c6", "ts": "2026-02-02T01:02:31.554307Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "17071520-72d6-48fe-b0cd-131074c719c6", "ts": "2026-02-02T01:02:31.554626Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}
+{"run_id": "17071520-72d6-48fe-b0cd-131074c719c6", "ts": "2026-02-02T01:02:31.554974Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "17071520-72d6-48fe-b0cd-131074c719c6", "ts": "2026-02-02T01:02:31.555049Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

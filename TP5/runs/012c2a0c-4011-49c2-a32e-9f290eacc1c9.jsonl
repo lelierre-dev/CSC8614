@@ -1,0 +1,20 @@
+{"run_id": "012c2a0c-4011-49c2-a32e-9f290eacc1c9", "ts": "2026-02-02T00:12:27.852098Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E12"}}
+{"run_id": "012c2a0c-4011-49c2-a32e-9f290eacc1c9", "ts": "2026-02-02T00:12:39.012123Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "med", "needs_retrieval": true, "retrieval_query": "Règlement de scolarité FISA, applicabilité des règles aux apprentis-ingénieurs, stagiaires et auditeurs libres; responsabilité collective en cas de plagiat; rythme d'alternance; exceptions pour les rendus non soumis; validation des UE selon critères de notes; redoublement et exclusion; définition d'affichage dans le contexte du règlement", "rationale": "Réponses requièrent une analyse détaillée du règlement."}}}
+{"run_id": "012c2a0c-4011-49c2-a32e-9f290eacc1c9", "ts": "2026-02-02T00:12:39.015398Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "012c2a0c-4011-49c2-a32e-9f290eacc1c9", "ts": "2026-02-02T00:12:39.248429Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "cd359f0fa710", "latency_ms": 232, "status": "ok", "k": 4, "n_docs": 4}}
+{"run_id": "012c2a0c-4011-49c2-a32e-9f290eacc1c9", "ts": "2026-02-02T00:12:39.249203Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 4}}
+{"run_id": "012c2a0c-4011-49c2-a32e-9f290eacc1c9", "ts": "2026-02-02T00:12:39.249543Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "012c2a0c-4011-49c2-a32e-9f290eacc1c9", "ts": "2026-02-02T00:13:10.920853Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "invalid_json"}}
+{"run_id": "012c2a0c-4011-49c2-a32e-9f290eacc1c9", "ts": "2026-02-02T00:13:10.997081Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "012c2a0c-4011-49c2-a32e-9f290eacc1c9", "ts": "2026-02-02T00:13:10.997569Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 1}}
+{"run_id": "012c2a0c-4011-49c2-a32e-9f290eacc1c9", "ts": "2026-02-02T00:13:10.999342Z", "event": "node_start", "data": {"node": "rewrite_query"}}
+{"run_id": "012c2a0c-4011-49c2-a32e-9f290eacc1c9", "ts": "2026-02-02T00:13:13.367623Z", "event": "node_end", "data": {"node": "rewrite_query", "status": "ok", "q2": "Règles FISA apprentis, stagiaires, auditeurs libres"}}
+{"run_id": "012c2a0c-4011-49c2-a32e-9f290eacc1c9", "ts": "2026-02-02T00:13:13.368590Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "012c2a0c-4011-49c2-a32e-9f290eacc1c9", "ts": "2026-02-02T00:13:13.801845Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "715efaeb24a9", "latency_ms": 433, "status": "ok", "k": 4, "n_docs": 4}}
+{"run_id": "012c2a0c-4011-49c2-a32e-9f290eacc1c9", "ts": "2026-02-02T00:13:13.802795Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 4}}
+{"run_id": "012c2a0c-4011-49c2-a32e-9f290eacc1c9", "ts": "2026-02-02T00:13:13.803263Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "012c2a0c-4011-49c2-a32e-9f290eacc1c9", "ts": "2026-02-02T00:13:42.972899Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "invalid_json"}}
+{"run_id": "012c2a0c-4011-49c2-a32e-9f290eacc1c9", "ts": "2026-02-02T00:13:42.974923Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "012c2a0c-4011-49c2-a32e-9f290eacc1c9", "ts": "2026-02-02T00:13:42.975110Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 2}}
+{"run_id": "012c2a0c-4011-49c2-a32e-9f290eacc1c9", "ts": "2026-02-02T00:13:42.975516Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "012c2a0c-4011-49c2-a32e-9f290eacc1c9", "ts": "2026-02-02T00:13:42.975573Z", "event": "node_end", "data": {"node": "finalize", "status": "budget_exceeded"}}

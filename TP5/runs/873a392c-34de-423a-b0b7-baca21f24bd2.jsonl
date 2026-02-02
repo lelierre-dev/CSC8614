@@ -1,0 +1,6 @@
+{"run_id": "873a392c-34de-423a-b0b7-baca21f24bd2", "ts": "2026-02-02T00:11:57.070345Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E08"}}
+{"run_id": "873a392c-34de-423a-b0b7-baca21f24bd2", "ts": "2026-02-02T00:12:01.992327Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "ignore", "category": "research", "priority": 3, "risk_level": "low", "needs_retrieval": false, "retrieval_query": "", "rationale": "Email contient des sujets PFE supplémentaires, pas d'action urgente à déclencher."}}}
+{"run_id": "873a392c-34de-423a-b0b7-baca21f24bd2", "ts": "2026-02-02T00:12:01.993281Z", "event": "node_start", "data": {"node": "stub_ignore"}}
+{"run_id": "873a392c-34de-423a-b0b7-baca21f24bd2", "ts": "2026-02-02T00:12:01.993577Z", "event": "node_end", "data": {"node": "stub_ignore", "status": "ok"}}
+{"run_id": "873a392c-34de-423a-b0b7-baca21f24bd2", "ts": "2026-02-02T00:12:01.994112Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "873a392c-34de-423a-b0b7-baca21f24bd2", "ts": "2026-02-02T00:12:01.994241Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "ignore"}}

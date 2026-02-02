@@ -12,6 +12,12 @@ def _extract_citations(text: str) -> List[str]:
 def finalize(state: AgentState) -> AgentState:
     log_event(state.run_id, "node_start", {"node": "finalize"})
 
+    if not state.budget.can_step():
+        log_event(state.run_id, "node_end", {"node": "finalize", "status": "budget_exceeded"})
+        return state
+
+    state.budget.steps_used += 1
+
     intent = state.decision.intent
 
     if intent == "reply":

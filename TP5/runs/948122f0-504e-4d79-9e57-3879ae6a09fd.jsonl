@@ -1,0 +1,11 @@
+{"run_id": "948122f0-504e-4d79-9e57-3879ae6a09fd", "ts": "2026-02-02T00:12:11.930114Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E11"}}
+{"run_id": "948122f0-504e-4d79-9e57-3879ae6a09fd", "ts": "2026-02-02T00:12:18.049634Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "teaching", "priority": 2, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "Durée normale de la formation d'apprentis-ingénieurs et rythme d'alternance pour les deux premières années, ainsi que potentiels changements en troisième année.", "rationale": "Email contient des questions spécifiques sur la formation qui nécessitent une recherche."}}}
+{"run_id": "948122f0-504e-4d79-9e57-3879ae6a09fd", "ts": "2026-02-02T00:12:18.051312Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "948122f0-504e-4d79-9e57-3879ae6a09fd", "ts": "2026-02-02T00:12:18.295317Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "212f8ad0c445", "latency_ms": 243, "status": "ok", "k": 4, "n_docs": 4}}
+{"run_id": "948122f0-504e-4d79-9e57-3879ae6a09fd", "ts": "2026-02-02T00:12:18.296164Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 4}}
+{"run_id": "948122f0-504e-4d79-9e57-3879ae6a09fd", "ts": "2026-02-02T00:12:18.296533Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "948122f0-504e-4d79-9e57-3879ae6a09fd", "ts": "2026-02-02T00:12:27.848501Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "948122f0-504e-4d79-9e57-3879ae6a09fd", "ts": "2026-02-02T00:12:27.850528Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "948122f0-504e-4d79-9e57-3879ae6a09fd", "ts": "2026-02-02T00:12:27.850713Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}
+{"run_id": "948122f0-504e-4d79-9e57-3879ae6a09fd", "ts": "2026-02-02T00:12:27.851085Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "948122f0-504e-4d79-9e57-3879ae6a09fd", "ts": "2026-02-02T00:12:27.851160Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

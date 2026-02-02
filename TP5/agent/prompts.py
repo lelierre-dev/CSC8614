@@ -33,7 +33,7 @@ Retourne EXACTEMENT ce JSON (mêmes clés, les valeurs sont des exemples) :
   "category": "xx",
   "priority": x,
   "risk_level": "x",
-  "needs_retrieval": true,
+  "needs_retrieval": xx,
   "retrieval_query": "xx",
   "rationale": "x"
 }}

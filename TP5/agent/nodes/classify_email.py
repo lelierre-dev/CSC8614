@@ -43,7 +43,31 @@ def parse_and_validate(raw: str) -> Decision:
 def classify_email(state: AgentState) -> AgentState:
     log_event(state.run_id, "node_start", {"node": "classify_email", "email_id": state.email_id})
 
+    if not state.budget.can_step():
+        log_event(state.run_id, "node_end", {"node": "classify_email", "status": "budget_exceeded"})
+        return state
+
+    state.budget.steps_used += 1
+
     prompt = ROUTER_PROMPT.format(subject=state.subject, sender=state.sender, body=state.body)
+    low = state.body.lower()
+    if any(x in low for x in ["ignore previous", "system:", "tool", "call", "exfiltrate"]):
+        state.decision = Decision(
+            intent="escalate",
+            category=state.decision.category,
+            priority=1,
+            risk_level="high",
+            needs_retrieval=False,
+            retrieval_query="",
+            rationale="Suspicion de prompt injection."
+        )
+        log_event(state.run_id, "node_end", {
+            "node": "classify_email",
+            "status": "ok",
+            "decision": state.decision.model_dump(),
+            "note": "injection_heuristic_triggered"
+        })
+        return state
     raw = call_llm(prompt)
 
     try:

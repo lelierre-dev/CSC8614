@@ -1,0 +1,10 @@
+{"run_id": "19f045f4-1e62-494a-b223-324850077959", "ts": "2026-02-02T00:11:46.167786Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E07"}}
+{"run_id": "19f045f4-1e62-494a-b223-324850077959", "ts": "2026-02-02T00:11:50.675698Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "research", "priority": 3, "risk_level": "low", "needs_retrieval": false, "retrieval_query": "", "rationale": "Réponse standard pour un groupe de travail sur un document et un repository Github."}}}
+{"run_id": "19f045f4-1e62-494a-b223-324850077959", "ts": "2026-02-02T00:11:50.680358Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "19f045f4-1e62-494a-b223-324850077959", "ts": "2026-02-02T00:11:50.680758Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "skipped"}}
+{"run_id": "19f045f4-1e62-494a-b223-324850077959", "ts": "2026-02-02T00:11:50.681513Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "19f045f4-1e62-494a-b223-324850077959", "ts": "2026-02-02T00:11:57.067873Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "19f045f4-1e62-494a-b223-324850077959", "ts": "2026-02-02T00:11:57.068743Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "19f045f4-1e62-494a-b223-324850077959", "ts": "2026-02-02T00:11:57.068902Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 0}}
+{"run_id": "19f045f4-1e62-494a-b223-324850077959", "ts": "2026-02-02T00:11:57.069187Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "19f045f4-1e62-494a-b223-324850077959", "ts": "2026-02-02T00:11:57.069249Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

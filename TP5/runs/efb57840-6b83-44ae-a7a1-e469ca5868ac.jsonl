@@ -1,0 +1,11 @@
+{"run_id": "efb57840-6b83-44ae-a7a1-e469ca5868ac", "ts": "2026-02-02T00:57:01.878723Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E06"}}
+{"run_id": "efb57840-6b83-44ae-a7a1-e469ca5868ac", "ts": "2026-02-02T00:57:11.605619Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "research", "priority": 3, "risk_level": "med", "needs_retrieval": true, "retrieval_query": "Durée prévue de la soutenance finale, contenu du rapport final, exigences pour la représentation des activités.", "rationale": "Email contient plusieurs points nécessitant confirmation et informations supplémentaires."}}}
+{"run_id": "efb57840-6b83-44ae-a7a1-e469ca5868ac", "ts": "2026-02-02T00:57:11.610544Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "efb57840-6b83-44ae-a7a1-e469ca5868ac", "ts": "2026-02-02T00:57:13.256738Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "fe0886e735fe", "latency_ms": 1645, "status": "ok", "k": 4, "n_docs": 4}}
+{"run_id": "efb57840-6b83-44ae-a7a1-e469ca5868ac", "ts": "2026-02-02T00:57:13.257622Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 4}}
+{"run_id": "efb57840-6b83-44ae-a7a1-e469ca5868ac", "ts": "2026-02-02T00:57:13.258101Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "efb57840-6b83-44ae-a7a1-e469ca5868ac", "ts": "2026-02-02T00:57:27.253235Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "efb57840-6b83-44ae-a7a1-e469ca5868ac", "ts": "2026-02-02T00:57:27.256656Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "efb57840-6b83-44ae-a7a1-e469ca5868ac", "ts": "2026-02-02T00:57:27.256887Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 1}}
+{"run_id": "efb57840-6b83-44ae-a7a1-e469ca5868ac", "ts": "2026-02-02T00:57:27.257620Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "efb57840-6b83-44ae-a7a1-e469ca5868ac", "ts": "2026-02-02T00:57:27.257796Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

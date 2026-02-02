@@ -1,0 +1,6 @@
+{"run_id": "5a7ec278-aa98-4340-a56c-2cdb7fb8fdd2", "ts": "2026-02-02T00:10:41.554775Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "5a7ec278-aa98-4340-a56c-2cdb7fb8fdd2", "ts": "2026-02-02T00:10:49.753053Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "ignore", "category": "admin", "priority": 2, "risk_level": "low", "needs_retrieval": false, "retrieval_query": "", "rationale": "Mise à jour du Moodle, pas d'information urgente ou critique."}}}
+{"run_id": "5a7ec278-aa98-4340-a56c-2cdb7fb8fdd2", "ts": "2026-02-02T00:10:49.755811Z", "event": "node_start", "data": {"node": "stub_ignore"}}
+{"run_id": "5a7ec278-aa98-4340-a56c-2cdb7fb8fdd2", "ts": "2026-02-02T00:10:49.755910Z", "event": "node_end", "data": {"node": "stub_ignore", "status": "ok"}}
+{"run_id": "5a7ec278-aa98-4340-a56c-2cdb7fb8fdd2", "ts": "2026-02-02T00:10:49.756190Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "5a7ec278-aa98-4340-a56c-2cdb7fb8fdd2", "ts": "2026-02-02T00:10:49.756273Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "ignore"}}

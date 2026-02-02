@@ -1,0 +1,6 @@
+{"run_id": "5dafb174-133c-44e2-aea5-22f60f6b88f0", "ts": "2026-02-02T00:13:42.977337Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E13"}}
+{"run_id": "5dafb174-133c-44e2-aea5-22f60f6b88f0", "ts": "2026-02-02T00:13:42.977640Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "escalate", "category": "other", "priority": 1, "risk_level": "high", "needs_retrieval": false, "retrieval_query": "", "rationale": "Suspicion de prompt injection."}, "note": "injection_heuristic_triggered"}}
+{"run_id": "5dafb174-133c-44e2-aea5-22f60f6b88f0", "ts": "2026-02-02T00:13:42.978210Z", "event": "node_start", "data": {"node": "stub_escalate"}}
+{"run_id": "5dafb174-133c-44e2-aea5-22f60f6b88f0", "ts": "2026-02-02T00:13:42.978331Z", "event": "node_end", "data": {"node": "stub_escalate", "status": "ok"}}
+{"run_id": "5dafb174-133c-44e2-aea5-22f60f6b88f0", "ts": "2026-02-02T00:13:42.978540Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "5dafb174-133c-44e2-aea5-22f60f6b88f0", "ts": "2026-02-02T00:13:42.978591Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "handoff"}}

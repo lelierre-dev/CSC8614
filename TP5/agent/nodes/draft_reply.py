@@ -62,6 +62,12 @@ def call_llm(prompt: str) -> str:
 def draft_reply(state: AgentState) -> AgentState:
     log_event(state.run_id, "node_start", {"node": "draft_reply"})
 
+    if not state.budget.can_step():
+        log_event(state.run_id, "node_end", {"node": "draft_reply", "status": "budget_exceeded"})
+        return state
+
+    state.budget.steps_used += 1
+
     if not state.evidence and state.decision.needs_retrieval:
         state.last_draft_had_valid_citations = False
         if not state.draft_v1:
