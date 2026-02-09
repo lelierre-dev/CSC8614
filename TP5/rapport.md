@@ -236,10 +236,13 @@ python -m TP5.run_batch
 python -m TP4.rag_answer "Questions sur FISA, reglements ou emails"
 
 ```
-e03 :
+
+###### Au moins 2 captures d’écran (terminal) montrant un run reply et un run escalate ou ignore
+
+e03, ignore :
 ![alt text](img/image-25.png)
 
-e11 :
+e11, reply :
 ![alt text](img/image-24.png)
 
 
@@ -254,6 +257,12 @@ e11 :
 Globalement, l’agent suit bien les règles prévues : il route correctement la plupart des annonces et des demandes, et les sorties finales restent lisibles.
 Cependant, il surclasse parfois en reply des messages qui devraient être ignore, ce qui crée des réponses inutiles.
 On observe aussi un manque d’escalade sur des cas sensibles (ex. E10), signe que le système reste trop permissif.
+
+##### Trajectoires (vue precedement dans l'exercice 11)
+
+Trajectoire intéressante : E12 suit classify_email -> retrieval -> draft_reply(safe_mode) -> check_evidence(false) -> rewrite_query -> 2e retrieval -> draft_reply(safe_mode) -> finalize(budget_exceeded).
+
+La trajectoire est courte et “propre” E08 : classify_email (needs_retrieval=false) -> stub_ignore -> finalize(final_kind=ignore).
 
 
 ##### Réflexion finale
