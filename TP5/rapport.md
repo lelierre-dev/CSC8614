@@ -258,7 +258,9 @@ Globalement, l’agent suit bien les règles prévues : il route correctement la
 Cependant, il surclasse parfois en reply des messages qui devraient être ignore, ce qui crée des réponses inutiles.
 On observe aussi un manque d’escalade sur des cas sensibles (ex. E10), signe que le système reste trop permissif.
 
-##### Trajectoires (vue precedement dans l'exercice 11)
+
+
+#### Trajectoires (vue précédemment dans l’exercice 11)
 
 Trajectoire intéressante : E12 suit classify_email -> retrieval -> draft_reply(safe_mode) -> check_evidence(false) -> rewrite_query -> 2e retrieval -> draft_reply(safe_mode) -> finalize(budget_exceeded).
 
